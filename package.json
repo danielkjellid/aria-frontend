@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "prettier:check": "prettier --check \"**/*.{js,ts,tsx,vue,css,json,md}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,ts,tsx,css,vue,json,md}\"",
+    "eslint:check": "eslint --ext vue,ts,js **/*",
+    "eslint:fix": "eslint --ext vue,ts,js **/* --fix",
+    "lint": "npm run prettier:check && npm run eslint:check",
+    "lint:fix": "npm run prettier:fix && npm run eslint:fix",
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0-alpha.2",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-vue": "^8.3.0",
+    "nuxt3": "latest",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.15",
+    "typescript": "^4.5.4",
+    "vue-eslint-parser": "^8.0.1",
+    "@babel/eslint-parser": "^7.16.5"
+  }
+}
