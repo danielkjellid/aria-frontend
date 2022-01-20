@@ -3,3 +3,5 @@ node_modules
 package.json
 .eslintrc.js
 .eslintignore
+@types/generated
+schema.json
