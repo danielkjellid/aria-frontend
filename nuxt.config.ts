@@ -2,14 +2,14 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  head: {
+  meta: {
     title: 'Flishuset',
     htmlAttrs: {
       lang: 'no',
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=2' },
       {
         hid: 'description',
         name: 'description',
@@ -67,4 +67,11 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  buildModules: ['@pinia/nuxt'],
+
+  modules: [
+    // @ts-ignore
+    ['aria-ui-nuxt', { defaultLinkTag: 'router-link', defaultHomePath: '/' }],
+  ],
 })
