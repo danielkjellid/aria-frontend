@@ -4,6 +4,7 @@
       name="Example"
       width="full"
       :loading="false"
+      :images="images"
       @on-navigate-to-content="() => console.log('on-navigate')"
     />
     <p>{{ images }}</p>
